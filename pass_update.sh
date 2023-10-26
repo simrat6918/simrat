@@ -31,7 +31,7 @@ do
 		status_function
 		;;
 
-	 AIX)	ssh "$username"@"$server" "Zudo chuser minage=0 root; echo 'root:$new_password' | sudo chpasswd; sudo chuser minage=1 root"
+	 AIX)	ssh "$username"@"$server" "sudo chuser minage=0 root; echo 'root:$new_password' | sudo chpasswd; sudo chuser minage=1 root"
 		status_function
                 ;;
 
