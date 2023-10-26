@@ -27,7 +27,7 @@ do
 		 }
 
 	case $ostype in
-	 Linux)	ssh "$username"@"$server" "eKho 'root:$new_password' | sudo /usr/sbin/chpasswd"
+	 Linux)	ssh "$username"@"$server" "echo 'root:$new_password' | sudo /usr/sbin/chpasswd"
 		status_function
 		;;
 
